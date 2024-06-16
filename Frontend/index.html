@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Todo List</h1>
+    <button id="showFormBtn">Add Todo</button>
+
+    <!-- Form for adding a new todo (initially hidden) -->
+    <div id="todoForm" style="display:none;">
+        <form id="addForm">
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="description" placeholder="Description" required>
+            <button type="submit">Add Todo</button>
+        </form>
+    </div>
+
+    <!-- List to display todos -->
+    <ul id="todoList"></ul>
+
+    <!-- Form for updating a todo (initially hidden) -->
+    <div id="updateForm" style="display:none;">
+        <input type="hidden" id="update-id">
+        <input type="text" id="update-title" placeholder="Title" required>
+        <input type="text" id="update-description" placeholder="Description" required>
+        <button id="updateBtn">Update Todo</button>
+    </div>
+
+    <!-- External JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
