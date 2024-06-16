@@ -2,34 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Todo List</h1>
-    <button id="showFormBtn">Add Todo</button>
+    <header>
+        <div class="header-container">
+            <h1>Todo List by Muhammad Shahzad</h1>
+        </div>
+    </header>
 
-    <!-- Form for adding a new todo (initially hidden) -->
-    <div id="todoForm" style="display:none;">
-        <form id="addForm">
-            <input type="text" id="title" placeholder="Title" required>
-            <input type="text" id="description" placeholder="Description" required>
-            <button type="submit">Add Todo</button>
-        </form>
-    </div>
+    <main>
+        <button id="showFormBtn">Add Task</button>
 
-    <!-- List to display todos -->
-    <ul id="todoList"></ul>
+        <!-- Form for adding a new todo (initially hidden) -->
+        <div id="todoForm" style="display:none;">
+            <form id="addForm">
+                <input type="text" id="title" placeholder="Title" required>
+                <input type="text" id="description" placeholder="Description" required>
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
 
-    <!-- Form for updating a todo (initially hidden) -->
-    <div id="updateForm" style="display:none;">
-        <input type="hidden" id="update-id">
-        <input type="text" id="update-title" placeholder="Title" required>
-        <input type="text" id="update-description" placeholder="Description" required>
-        <button id="updateBtn">Update Todo</button>
-    </div>
+        <!-- List to display todos -->
+        <ul id="todoList"></ul>
 
-    <!-- External JavaScript file -->
+        <!-- Form for updating a todo (initially hidden) -->
+        <div id="updateForm" style="display:none;">
+            <input type="hidden" id="update-id">
+            <input type="text" id="update-title" placeholder="Title" required>
+            <input type="text" id="update-description" placeholder="Description" required>
+            <button id="updateBtn">Update Task</button>
+        </div>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>

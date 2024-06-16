@@ -3,13 +3,33 @@ body {
     background-color: #f4f4f9;
     color: #333;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff; /* Blue color for the header */
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
-    color: #007bff;
-    margin-bottom: 20px;
+    color: #fff;
+    margin: 0;
+}
+
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 button {
@@ -20,10 +40,12 @@ button {
     border-radius: 5px;
     color: #fff;
     font-size: 16px;
+    background-color: #007bff;
 }
 
 button:hover {
     opacity: 0.9;
+    background-color: #0056b3;
 }
 
 #showFormBtn {
