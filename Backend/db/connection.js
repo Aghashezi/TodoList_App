@@ -8,8 +8,8 @@ function Connection() {
       connectionLimit: 10,
       host: 'localhost',
       user: 'root',
-      password: 'root',
-      database: 'todo_app'
+      password: 'Password', // Replace with your actual MySQL password
+      database: 'Databasename'
     });
   };
 

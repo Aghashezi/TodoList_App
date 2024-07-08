@@ -2,7 +2,7 @@
   "name": "todoapp",
   "version": "1.0.0",
   "description": "Simple TODO list app using Node.js, Express and MySQL",
-  "author": "Shezi",
+  "author": "Yogasaikrishna",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.20.2",
@@ -14,11 +14,7 @@
   },
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "devDependencies": {
-    "nodemon": "^3.1.4"
-  }
+  "keywords": []
 }
