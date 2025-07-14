@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #007bff; /* Blue color for the header */
+    background-color: #007bff;
     padding: 10px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -56,7 +56,8 @@ button:hover {
     background-color: #218838;
 }
 
-#todoForm, #updateForm {
+#todoForm,
+#updateForm {
     display: none;
     background-color: #fff;
     padding: 20px;
@@ -67,7 +68,8 @@ button:hover {
     transition: opacity 0.5s ease-in-out;
 }
 
-#todoForm.show, #updateForm.show {
+#todoForm.show,
+#updateForm.show {
     display: block;
 }
 
@@ -88,7 +90,7 @@ input[type="text"]:focus {
 ul {
     list-style-type: none;
     padding: 0;
-    max-width: 500px;
+    max-width: 70%;
     margin: 20px auto;
 }
 
@@ -103,6 +105,8 @@ ul {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    min-height: 80px; /* Ensure consistent height */
+    overflow: hidden; /* Hide overflow text */
 }
 
 .todo-item:hover {

@@ -52,12 +52,15 @@ function displayTodos(todos) {
     todoList.innerHTML = '';
     todos.forEach(todo => {
         const listItem = document.createElement('li');
+        const createdAt = new Date(todo.created_at).toLocaleString(); 
         listItem.className = 'todo-item';
+
         listItem.innerHTML = `
             <div>
                 <strong>${todo.title}</strong>: ${todo.description}
             </div>
             <div>
+            <small>Created: ${createdAt}</small>
                 <button class="edit-btn" onclick="showUpdateForm(${todo.id}, '${todo.title}', '${todo.description}')">Edit</button>
                 <button class="delete-btn" onclick="deleteTodo(${todo.id})">Delete</button>
             </div>
